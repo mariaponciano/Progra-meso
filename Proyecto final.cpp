@@ -63,8 +63,10 @@ void dificultad()
 			minas = 60;
 		}
 
-		return;
+		return 0;
 	}
+	return 0;
+		void limpiartablero(char minastablero, char tablerojuego);
 }
 
 	// Esta funcion lo que hace es limpiar el tablero del juego 
@@ -110,4 +112,34 @@ void limpiartablero(char minastablero[][ladomaximo], char tablerojuego[][ladomax
 			return (ch - '0') + 10; 
 
 	}
+//Esta funcion hace visible al tablero 
+void tablerovisible(char tablerojuego[][ladomaximo]) {
+	//linea superior
+	cout << "   "; 
+	for (int i = 0; i < columnas; i++)
+	{
+		cout << indexToChar(i) << '  '; 
+		cout << endl << endl;
+	}
+	//filas 
+	for (int i = 0; i < filas; i++)
+	{
+		cout << indexToChar(i) << '  ';
+		for (int i = 0; i < columnas; i++)
+		{
+			cout << tablerojuego[i][j] << "  ";
+			cout << "  " << indexToChar(i);
+			cout << endl;
+		}
+	}
+		//espacios 
+		cout << endl;
+		for (int i = 0; i < columnas; i++)
+		{
+			cout << indexToChar(i) << '  '; 
+			cout << endl; 
+
+			return;
+		}
+
 
