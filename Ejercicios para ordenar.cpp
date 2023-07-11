@@ -63,7 +63,7 @@ int main() {
 	cout << endl;
 	cout << "La transaccion mas grande es:  " << arreglo[34] << endl;
 	cout << "La transaccion mas pequeno es:  " << arreglo[1] << endl;
-	
+	int matriz[1][2] = arreglo [35];
 	return 0;
 }
 
