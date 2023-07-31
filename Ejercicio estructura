@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std; 
+
+struct Persona {
+    string nombre; 
+    int edad; 
+    float altura; 
+    string apellido; 
+    string nacionalidad; 
+};
+
+int main()
+{
+    const int arreglo = 5;
+    int opcion = 0;
+    Persona persona[arreglo]; 
+    for (int i = 0; i < arreglo; i++)
+    {
+        cout << "Ingrese el nombre de la persona" << i + 1 << ":";
+        cin >> persona[i].nombre;
+
+        cout << "Ingrese el apellido de la persona " << i + 1 << ": ";
+        cin >> persona[i].apellido;
+
+        cout << "Ingrese la edad de la persona " << i + 1 << ": ";
+        cin >> persona[i].edad;
+
+        cout << "Ingrese la altura de la persona " << i + 1 << ": ";
+        cin >> persona[i].altura;
+
+        cout << "Ingrese la nacionalidad de la persona " << i + 1 << ": ";
+        cin >> persona[i].nacionalidad;
+        system("cls");
+    }
+    cout << "1. Mostrar los nombres de las personas" << endl;
+    cout << "2. Mostrar el nombre y la edad de las personas" << endl;
+    cout << "3. Mostrar a las personas en el orden inverso en el cual se ingreso" << endl;
+    cout << "4. Buscar a una persona por su nombre" << endl;
+    cin >> opcion;
+    switch (opcion)
+    {
+    case 1:
+        for (int i = 0; i < arreglo; ++i) {
+            cout << "Nombre:" << i + 1 << endl;
+            cout << persona[i].nombre << endl;
+        }
+    case 2: 
+        for (int i = 0; i < arreglo; ++i) {
+            cout << persona[i].nombre << "-" << persona[i].edad << endl;
+        }
+    default:
+        break;
+    }
+        
+    
+
+}
