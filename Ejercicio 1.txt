@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n1, n2, max_num;
+    cout << " Ingrese dos numreos: " << endl;
+    cin >> n1 >> n2;
+
+    // ver cual es el numero mas grande y guardarlo 
+    if (n1 > n2) {
+        max_num = n1;
+    }
+    else {
+        max_num = n2;
+    }
+
+    while (true)
+    {
+        // ver si el numero es divisible por los 2 
+        if (max_num % n1 == 0 && max_num % n2 == 0)
+        {
+            cout << " El minimo comun multiplo de " << n1 << " y " << n2 << " es " << max_num;
+            break;
+        }
+    }
+    return 0;
+}
+
+int main() {
+    int n1, n2, a, b, mcd;
+    cout << "Ingrese dos numeros : " << endl;
+    cin >> n1 >> n2;
+    //asiganr variables
+    a = max(n1, n2);
+    b = min(n1, n2);
+
+    // ciclo 
+    do {
+        mcd = b;
+        b = a & b;
+        a = mcd;
+    } while
+
+        (b != 0);
+
+    cout << "El M.C.D entre " << n1 << " y " << n2 << "es " << mcd;
+}
+
