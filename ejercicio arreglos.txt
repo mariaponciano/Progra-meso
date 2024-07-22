@@ -1,0 +1,87 @@
+EJERCICIO 1 
+#include <iostream>
+#include <Windows.h>
+using namespace std; 
+
+int main()
+{
+	int numerosIngresados [5];
+	for (int i = 4; i > 0; i--)
+	{
+		system("cls"); 
+		cout << "Ingrese el numero de la casilla " << i << " "; 
+		cin >> numerosIngresados [i];
+
+	}
+	for (int i = 4; i > 0; i--)
+	{
+		cout << "El numero ingresado en la posicion " << i << " es " << numerosIngresados[i];
+		cout << endl;
+	}
+}
+
+
+EJERCICIO 2 
+
+#include <iostream>
+#include <Windows.h>
+using namespace std; 
+
+int main()
+{
+    int arreglo[10];
+	for (int i = 0; i < 10; i++)
+	{
+		system("cls");
+		cout << "Ingrese el numero de la casilla " << i << " "; 
+		cin >> arreglo[i];
+	}
+	for (int i = 9; i > 0; i--)
+	{
+		cout << "El numero ingresado en la posicion " << i << " " << "es" << arreglo[i];
+		cout << endl;
+	}
+
+
+EJERCICIO 3 
+
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main()
+{
+	int arreglo[6]; 
+	for (int i = 5; i > 0; i--) {
+		system("cls");
+		cout << "Ingrese el numero de la casilla " << i << " ";
+		cin >> arreglo[i];
+	}
+	for (int i = 5; i > 0; i--)
+	{
+		cout << "El numero ingresado en la posicion " << i << " " << "es" << arreglo[i];
+		cout << endl;
+	}
+}
+
+
+EJERCICIO 4
+
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main()
+{
+	int arreglo[4]; 
+	for (int i = 3; i > 0; i--) {
+		system("cls");
+		cout << "Ingrese el numero de la casilla " << i << " ";
+		cin >> arreglo[i];
+	}
+	for (int i = 0; i < 4; i++)
+	{
+		cout << "El numero ingresado en la posicion " << i << " " << "es" << arreglo[i];
+		cout << endl;
+	}
+}
